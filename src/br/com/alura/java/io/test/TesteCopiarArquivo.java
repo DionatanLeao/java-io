@@ -12,32 +12,32 @@ import java.io.Writer;
 import java.net.Socket;
 
 public class TesteCopiarArquivo {
-	
+
 	public static void main(String[] args) throws IOException {
-		
+
 		Socket s = new Socket();
-		
-		//InputStream fis = new FileInputStream("lorem.txt");
-		InputStream fis = s.getInputStream(); //System.in;
+
+		// InputStream fis = new FileInputStream("lorem.txt");
+		InputStream fis = s.getInputStream(); // System.in;
 		Reader isr = new InputStreamReader(fis);
 		BufferedReader br = new BufferedReader(isr);
-		
-		//OutputStream fos = new FileOutputStream("lorem2.txt");
-		OutputStream fos = s.getOutputStream(); //System.out;
+
+		// OutputStream fos = new FileOutputStream("lorem2.txt");
+		OutputStream fos = s.getOutputStream(); // System.out;
 		Writer isw = new OutputStreamWriter(fos);
 		BufferedWriter bw = new BufferedWriter(isw);
-		
+
 		String linha = br.readLine();
-		
-		while(linha != null && !linha.isEmpty()) {
+
+		while (linha != null && !linha.isEmpty()) {
 			bw.write(linha);
 			bw.newLine();
 			bw.flush();
 			linha = br.readLine();
 		}
-		
+
 		br.close();
 		bw.close();
-		
+
 	}
 }

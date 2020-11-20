@@ -4,11 +4,11 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class TesteEscrita2 {
+public class TesteEscritaFileWrite {
 
 	public static void main(String[] args) throws IOException {
 
-//        Fluxo de saida com Arquivo
+//      Fluxo de saida com Arquivo
 //		OutputStream fis = new FileOutputStream("lorem2.txt");
 //		Writer osw = new OutputStreamWriter(fis);
 //		BufferedWriter br = new BufferedWriter(osw);
