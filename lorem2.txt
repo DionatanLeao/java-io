@@ -1,2 +1,1 @@
-1914 translation by H. Rackham "But I must explain to you how all this mistaken idea
-1914 translation by H. Rackham "But I must explain to you how all this mistaken idea
+Teste com InputStream utilizando System.in
