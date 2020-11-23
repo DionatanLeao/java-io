@@ -7,10 +7,11 @@ public class IMC {
 	private static float peso;
 	private static float altura;
 	private static float imc;
+	private static Scanner sc;
 
 	public static void main(String[] args) {
 
-		Scanner sc = new Scanner(System.in);
+		sc = new Scanner(System.in);
 
 		System.out.print("Digite seu Peso: ");
 		peso = sc.nextFloat();
